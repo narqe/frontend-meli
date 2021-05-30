@@ -6,7 +6,9 @@ import NumberFormat from 'react-number-format';
 const BuscadorDetails = ({ product }) => {
   return (
     !!product 
-      ? <div className="DetailContainer">
+      ? 
+      <div className="DetailContainer">
+          <div className="Breadcrumb">{product.categories ? product.categories.join(" > ") : ''}</div>
           <div className="Detail">
             <div className="FirstCol">
               <img src={product.picture} alt={product?.item?.title} />
@@ -17,6 +19,7 @@ const BuscadorDetails = ({ product }) => {
               <h4 className="Title">{product?.item?.title}</h4>
               <h2><NumberFormat value={product?.item?.price.amount} displayType={'text'} thousandSeparator={true} prefix={'$'} /></h2>
               <Button 
+                className="Buy"
                 variant="contained"
                 color="primary" 
                 size="large">

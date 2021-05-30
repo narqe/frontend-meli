@@ -86,11 +86,35 @@
     }
 }
 
+.Breadcrumb {
+    max-width: 900px;
+    text-align: left;
+    margin: 10px auto;
+}
+
 .Detail {
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
     text-align: left;
+
+    .FirstCol {
+        text-align: center;
+    }
+
+    .SecondCol {
+        padding: 10px;
+    }
+
+    .Buy {
+        width: 100%;
+        background-color: #2641ff;
+    }
+
+    .Description{
+        padding: 10px;
+    }
+
 }

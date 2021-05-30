@@ -7,6 +7,7 @@ const BuscadorResults = ({ results, loading, search }) => {
 
   return (
       <div className="ResultsContainer">
+      <div className="Breadcrumb">{results.categories ? results.categories.join(" > ") : ''}</div>
       <h2>Resultados para: {search}</h2>
       {!!loading
         ? 'Cargando...'
