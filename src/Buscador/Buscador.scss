@@ -1,0 +1,96 @@
+.Buscador {
+    background: #fff159;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Logo {
+        background: url(../logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 50px;
+        padding: 0 10px;
+    }
+
+    &__box{
+       width: 400px !important;   
+       background: white;
+       margin: 0px !important;
+       height: 31px !important;
+       padding: 2px 10px !important;
+    }
+
+    &__button { 
+        background: #c7c7c7  !important;;
+        border-radius: 0 !important;;
+        color: white !important;;
+        height: 15px;
+        padding: 10px !important;
+    }
+}
+
+
+.ResultsContainer,
+.DetailContainer {
+    background-color: #efefef;
+    padding: 20px;
+    height: 100%;
+}
+
+.Results, 
+.Detail {
+    margin: 0 auto;
+    max-width: 900px;
+    border: 1px solid #ffffff;
+    box-shadow: 3px 0px 8px #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+
+    a { 
+        text-decoration: none; 
+        cursor: pointer;
+        color: rgb(20, 20, 20);
+    }
+
+    a:hover { 
+        background-color: #c7c7c7;
+    }
+
+    .Item {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .RightBox {
+            text-align: left;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .LeftBox {
+            max-width: 150px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.Detail {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    text-align: left;
+}
